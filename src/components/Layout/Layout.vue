@@ -14,7 +14,7 @@ const mainStore = useMainStore();
 onMounted(() => {
   if (!mainStore.isLogin) {
     dialog.info({
-      title: '提示',
+      title: '来自原寅の温馨提示:',
       content: '由于网易云接口限制,建议请先登录'
     });
   }
@@ -22,10 +22,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
-    id="layout-container"
-    style="width: 85vw;margin: auto;"
-  >
+  <div id="layout-container" style="width: 85vw;margin: auto;">
     <n-layout>
       <base-header />
       <layout-left-menu />
